@@ -1,0 +1,121 @@
+.weather-app {
+    background-color: #f7f7f7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-container {
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-container input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s;
+}
+
+.input-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.weather-info {
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    position: relative;
+}
+/* WeatherCard.css */
+
+.app-title {
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 30px; /* Position for larger screens */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .weather-icon {
+        right: 0px; /* Position for smaller screens (mobile) */
+    }
+}
+
+
+  
+.weather-description {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize; /* Capitalize the weather description */
+    word-spacing: 3px; /* Add a small gap between each word */
+}
+.description{
+    margin-bottom: 10px;
+    font-size: 25;
+    color: #333;
+   font-weight: 549;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize; /* Capitalize the weather description */
+    word-spacing: 2px; 
+}
+
+
+
+.weather-details {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .weather-container {
+        width: 90%;
+    }
+
+    .input-container input[type="text"] {
+        width: calc(100% - 40px);
+    }
+}
